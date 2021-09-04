@@ -1,5 +1,5 @@
 {
   "username" : "postgres",
   "password" : "umedjana1",
-  "database_name": "NewDatabase"
+  "db_name": "BankingExamination"
 }

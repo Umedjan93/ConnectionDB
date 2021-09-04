@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/connectionDB.iml" filepath="$PROJECT_DIR$/.idea/connectionDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OBE.iml" filepath="$PROJECT_DIR$/.idea/OBE.iml" />
     </modules>
   </component>
 </project>

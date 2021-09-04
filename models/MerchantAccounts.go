@@ -1,0 +1,25 @@
+package models
+
+import (
+	"encoding/xml"
+	"time"
+)
+
+type xmlForMerchantAccounts struct {
+	XMLName xml.Name `xml:"xml_name"`
+	MerchantAccounts []MerchantAccounts `xml:"merchant_accounts"`
+}
+
+type MerchantAccounts struct {
+	XMLName       xml.Name  `xml:"xml_name"`
+	id            int       `json:"id,omitempty" xml:"id"`
+	accNumber     string    `json:"acc_number,omitempty" xml:"acc_number"`
+	MerchantID    int       `json:"merchant_id,omitempty" xml:"merchant_id"`
+	balance       int       `json:"balance,omitempty" xml:"balance"`
+	swift         int       `json:"swift,omitempty" xml:"swift"`
+	LastVisitDate time.Time `json:"last_visit_date" xml:"last_visit_date"`
+	locked        bool      `json:"locked,omitempty" xml:"locked"`
+	creationDate  time.Time `json:"creation_date" xml:"creation_date"`
+	upDate        time.Time `json:"up_date" xml:"up_date"`
+	deleted       bool      `json:"deleted,omitempty" xml:"deleted"`
+}
